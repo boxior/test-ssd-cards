@@ -1,0 +1,11 @@
+.footer {
+  display: block;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  .footer__copyright {
+    font-family: $font-openSans;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

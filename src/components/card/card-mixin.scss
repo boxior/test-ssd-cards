@@ -1,0 +1,168 @@
+.page-home__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  .page-home__card {
+    width: 33.33%;
+    padding: 10px;
+
+    @include media-tablet {
+      width: 50%;
+    }
+
+    @include media-mobile {
+      width: 100%;
+    }
+
+    &.card--large {
+      width: 66.66%;
+
+      @include media-tablet {
+        width: 100%;
+      }
+    }
+
+    &.card--black {
+
+      .card__footer-card {
+        background-color: $color-black;
+        color: $color-grey;
+      }
+
+      .footer-card__title {
+        color: $color-white;
+      }
+    }
+
+    &.card--yellow {
+
+      .card__footer-card {
+        background-color: $color-yellow;
+        color: $color-white;
+      }
+
+      .clock-icon {
+        @include bg($clock-icon-white);
+      }
+
+      .eye-icon {
+        @include bg($eye-icon-white);
+      }
+
+    }
+
+    .card {
+
+    }
+
+    .card__header {
+      width: 100%;
+      height: 241px;
+    }
+
+    .card__header-img {
+      position: relative;
+      display: inline-block;
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+    }
+
+    .img-1, .img-2, .img-3, .img-4, .img-5 {
+      background: url("../images/content/protone-img.jpg") no-repeat center center;
+      background-size: cover;
+    }
+
+    .img-2 {
+      background-image: url("../images/content/stadium-img.jpg");
+    }
+
+    .img-3 {
+      background-image: url("../images/content/winter-img.jpg");
+    }
+
+    .img-4 {
+      background-image: url("../images/content/building-img.jpg");
+    }
+
+    .img-5 {
+      background-image: url("../images/content/beautiful-img.jpg");
+    }
+
+    .card__img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .card__footer-card {
+      padding: 0 20px;
+      background-color: $color-grey-light;
+    }
+
+    .footer-card {
+
+    }
+
+    .footer-card__title {
+      padding: 17px 0 6px 0;
+      color: $color-black;
+      font-family: $font-arvo;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+    }
+    .footer-card__desc {
+      max-height: 50px;
+      overflow: hidden;
+      font-family: $font-openSans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+
+    .footer-card__footer {
+      padding: 58px 0 20px 0;
+      display: flex;
+      justify-content: space-between;
+      font-family: $font-montserrat;
+      font-size: 10px;
+      font-weight: 400;
+    }
+
+    .footer-card__date-card, .footer-card__views-card {
+      display: flex;
+      align-items: center;
+    }
+
+    .date-card__icon, .views-card__icon {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .clock-icon {
+      @include bg($clock-icon);
+    }
+
+    .date-card__date, .views-card__count {
+      padding-left: 5px;
+    }
+
+    .footer-card__views-card {
+    }
+
+    .views-card__icon {
+    }
+
+    .eye-icon {
+      @include bg($eye-icon);
+    }
+
+    .views-card__count {
+    }
+
+  }
+}

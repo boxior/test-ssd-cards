@@ -1,0 +1,28 @@
+.page-home {
+
+  .page-home__container {
+
+  }
+  .page-home__header {
+
+  }
+  .page-home__title {
+    margin: 0 0 80px 0;
+    font-family: $font-arvo;
+    font-size: 32px;
+    font-weight: 600;
+    color: $color-black;
+    text-align: center;
+
+    @include media-mobile {
+      margin-bottom: 75px;
+    }
+
+  }
+  .page-home__main {
+
+  }
+
+
+
+}

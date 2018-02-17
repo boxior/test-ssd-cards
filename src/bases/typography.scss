@@ -1,0 +1,31 @@
+body {
+  color: $color-grey;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: $font-arvo;
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  background: transparent;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
