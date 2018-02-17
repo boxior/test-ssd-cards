@@ -1,10 +1,16 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  @media screen and (-ms-high-contrast: active), all and (-ms-high-contrast: none) {
+    height: 100vh;
+    min-height: 0;
+  }
 
   .wrapper__header {
-
+    flex: 0 0 auto;
   }
 
   .wrapper__main {
